@@ -11,7 +11,7 @@ body{
 	width: 1140px;
 	margin: auto;
 }
->
+
 
 /* Header start*/
 
@@ -39,7 +39,7 @@ body{
 }
 
 .banner-content{
-	    padding-top: 215px;
+	padding-top: 215px;
     width: 60%;
     margin: auto;
     text-align: center;
@@ -88,7 +88,7 @@ body{
 /*about section start*/
 
 .about{
-	    background-color: #F6F9F9;
+	background-color: #F6F9F9;
     text-align: center;
     width: 100%;
     float: left;
@@ -324,20 +324,23 @@ input[type=checkbox] + a:before{
 }
 
 .copyright{
-	 width: 83%;
+	 width: 60%;
 	 float: left;
     padding-top: 35px;
 
 }
 
 .copyright p{
-	font-size: 15px;
+	font-size: 17px;
     color: #999999;
-}s
+}
 
 .social-link{
     width: 40%;
     float: left;
+}
+.social-link ul{
+        margin-left: 266px;
 }
 
 .social-link ul li{
@@ -367,7 +370,7 @@ input[type=checkbox] + a:before{
 
 .fab.fa-linkedin-in{
 	background-color: #15a4fa;
-	    padding: 15px;
+	 padding: 15px;
     color: white;
 }
 
@@ -402,6 +405,9 @@ input[type=checkbox] + a:before{
     float: left;
     overflow: hidden;
     margin: 10px;
+}
+.img-hover img{
+
 }
 .image-hover-contant{
     background: rgba(22, 141, 253, 0.8);
@@ -439,4 +445,110 @@ i.fa.fa-link {
 }
 .image-hover:hover .image-hover-contant {
     top:0;
+}
+/*media query*/
+
+/*mobile device*/
+@media (min-width: 0px) and (max-width: 600px){
+    .container{
+        width: 100%;      
+    }
+    .logo{
+        text-align: center;
+    }
+    .banner{
+    width: 100%;
+    background:url(../img/banner.png) no-repeat;
+    background-size: cover;
+    }
+    .banner-content{
+    padding-top: 100px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    }
+    .banner-content h3{
+    font-size: 90px;
+    color: white;
+    }
+    .banner-content p {
+    font-size: 20px;
+    width: 100%;
+    }
+.btn-icon {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    }
+/*section-3*/
+    .about{
+    background-color: #F6F9F9;
+    text-align: center;
+    width: 100%;
+    float: left;
+    }
+
+.about-content h2 {
+    width: 46%;    
+    }
+
+.about-content p {
+    color: #bbbcbc;
+    font-size: 16px;
+    width: 44%;
+    text-align: center;
+    padding-bottom: 110px;
+    }
+.feature {
+    float: left;
+    }
+
+/*responsive start*/
+
+
+.responsive {
+      margin-top: -100px;
+    text-align: center;
+    margin-left: 50px;
+    }
+
+
+.clean-design {
+    width: 100%;
+    }
+
+.clean-design p{
+   width: 55%;
+   margin: 0 auto;
+    }
+.font-awasome-icon{
+    width: 100%;
+    }
+.font-awasome-icon p{
+    width: 55%;
+   margin: 0 auto;
+    }
+    /*image-hover*/
+    .portfolio{
+        width: 100%;
+    }
+    .image-hover{
+        width: 100%;
+        float: left;
+    }
+    .image-hover img{
+       width: 100%;
+    }
+    i.fa.fa-search-plus {
+    top: 130px;
+    left: 172px;  
+    }
+    i.fa.fa-link {
+    top: 130px;
+    left: 242px;  
+    }
+    .stay-with-us{
+        width: 100%;
+        float: left;
+    }
+    
 }
