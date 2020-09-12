@@ -11,7 +11,7 @@ body{
 	width: 1140px;
 	margin: auto;
 }
->
+
 
 /* Header start*/
 
@@ -19,7 +19,10 @@ body{
 
 	background-color: #f6f9f9
 }
-
+.logo {
+    margin: -7px 0px;
+    margin-left: 30px;
+}
 .logo img{
 
 	    padding: 30px 0px;;
@@ -61,13 +64,21 @@ body{
 .btn {
     border: 1px solid #15a4fa;
     background: transparent;
-    color: #fff;
-    padding: 20px 35px;
+    padding: 18px 34px;
     font-size: 18px;
+    color: #ffffff;
+    border-radius: 6px;
 }
 
 .btn:hover{
 	background-color: #15a4fa;
+    transition: 0.6s;
+    padding: 18px 34px;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px #302d2dfa;
+
 }
 .btn-icon {
     color: #fff;
@@ -107,7 +118,7 @@ body{
 .feature {
     width: 100%;
     float: left;
-    padding-top: 90px;
+    padding-top: 50px;
 }
 
 /*responsive start*/
@@ -181,7 +192,7 @@ padding-bottom: 65px;
     width: 100%;
     float: left;
     background-color: #F6F9F9;
-    height: 900px;
+    
 }
 
 .protfolio-content {
@@ -200,11 +211,7 @@ padding-bottom: 65px;
 	color: #afb0b0;
 
 }
-.protfolio-img {
-    width: 33.33%;
-    float: left;
-    margin-bottom: 20px;
-}
+
 
 .stay-with-us{
 	width: 100%;
@@ -272,6 +279,8 @@ input[type=button] {
 
 input[type=button]:hover{
 	background-color: #15a4fa;
+    transition: 0.3s;
+    box-shadow: 1px 1px 4px #302d2dfa;
 }
 
 .checkbox a{
@@ -387,4 +396,47 @@ input[type=checkbox] + a:before{
 	background-color: #0976b4;
 	    padding: 15px;
     color: white;
+}
+.image-hover{
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px;
+}
+.image-hover-contant{
+    background: rgba(22, 141, 253, 0.8);
+    width: 100%;
+    top: 100%;
+    height: 100%;
+    position: absolute;
+    transition:0.5s ease-in-out;
+}
+.protfolio-button{
+    float: left;
+    position: relative;
+    
+
+}
+i.fa.fa-search-plus {
+    position: absolute;
+    top: 118px;
+    left: 123px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 12px;
+    border-radius: 2px;
+    font-size: 20px;
+}
+i.fa.fa-link {
+    position: absolute;
+    top: 118px;
+    left: 183px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 12px;
+    border-radius: 2px;
+    font-size: 20px;
+}
+.image-hover:hover .image-hover-contant {
+    top:0;
 }
